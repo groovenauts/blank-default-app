@@ -12,9 +12,11 @@ handlers:
 
 nobuild_files:
 - vendor/
+- .git/
 
 skip_files:
 - vendor/
+- .git/
 
 version:
-  2017032201
+  20181115-01
