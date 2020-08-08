@@ -1,22 +1,6 @@
-service: default                # see https://cloud.google.com/appengine/docs/go/
-runtime: go                     # see https://cloud.google.com/appengine/docs/go/
-api_version: go1                # used when appengine supports different go versions
-
-# These are specified by using command line flag
-# application: my-application-id  # defined when you create your app using google dev console
-# version: alpha                  # you can run multiple versions of an app and A/B test
+service: default
+runtime: go113
 
 handlers:
 - url: /.*
-  script: _go_app
-
-nobuild_files:
-- vendor/
-- .git/
-
-skip_files:
-- vendor/
-- .git/
-
-version:
-  20181115-01
+  script: auto
