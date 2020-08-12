@@ -3,5 +3,5 @@
 ## Deploy
 
 ```
-$ goapp deploy -application [Your GCP Project ID]
+$ gcloud --project [Your GCP Project ID] app deploy
 ```
